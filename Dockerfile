@@ -9,7 +9,7 @@ RUN pip3 install -r requirements.txt
 #first . represents local computer folders and second . represents those in docker container
 COPY . .
 # port where the Django app runs  
-EXPOSE 8000  
+# EXPOSE 8000  
 # running command
 CMD [ "python3", "manage.py", "runserver", "0.0.0.0:8000"]
 
